@@ -14,3 +14,5 @@ None after the JSX correction and dial-origin correction. Detector returned [] f
 Keep the quiet field structure, working dial, restrained signal color and visible synthetic-data disclosures.
 
 Verification: build/typecheck success, automated station/time/moon/table/keyboard checks at 1440 and 390, no overflow or browser exceptions, reduced-motion mode and normal-motion dial check. Publication checks appended after deployment.
+
+Publication verified 2026-11-09: GitHub Pages built commit f291962; live HTTP 200. Headless Edge full-page captures and automated checks passed at exact 1440px and 390px. CLI mobile screenshot hit Edge's minimum window-width behavior; exact mobile viewport evidence uses Playwright-controlled headless Edge (innerWidth=390, scrollWidth=390). One nonblocking copied shadcn Fast Refresh lint warning; build has a 795kB minified JS chunk warning (about 252kB gzip).
