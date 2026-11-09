@@ -1,3 +1,4 @@
+import { CoastPhoto } from "./CoastalMedia";
 import { useEffect, useRef, useState } from "react";
 import { animate, createSpring } from "animejs";
 import { useReducedMotion } from "motion/react";
@@ -233,7 +234,7 @@ export function Almanac({
           </p>
         </div>
         <article className="memory-moment">
-          <div className="year">1953</div>
+          <div><div className="year">1953</div><figure className="memory-photo"><CoastPhoto name="storm" alt="AI-generated illustration of a grey storm sea beneath heavy clouds; no people or destruction."/><figcaption>AI-generated illustration · Not a historical photograph or a reconstruction of the 1953 flood.</figcaption></figure></div>
           <div>
             <h3>The night the water came.</h3>
             <p>
@@ -319,6 +320,8 @@ export function Almanac({
             sections. <strong>Manus is a paid agent and was skipped;</strong>{" "}
             direct implementation with free libraries replaces it.
           </p>
+          <p>Coastal images were made with ChatGPT image generation and are AI-generated illustrations. The three station portraits show generic coastal character, not verified views of Den Helder, Whitby or Cuxhaven. The tide-clock pair is illustrative. The storm sea is a contemporary illustration, never an archival photograph.</p>
+          <p>Hero motion: Gemini Veo was attempted; the video composer remained unavailable. A locally rendered, subtle sea-ripple loop animates the ChatGPT still instead. The loop is muted, can be paused, and is replaced by a still for reduced motion. UI transitions remain under 400ms; the ambient film is separate.</p>
           <p>
             All tide values, station profiles and lunar displays are synthetic
             or schematic. They are not calibrated observations. Historical text

@@ -1,0 +1,2 @@
+import {chromium} from 'playwright';import fs from 'node:fs';
+const b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage();await p.goto('http://127.0.0.1:5181/tide-almanac/');await p.locator('h1').waitFor();let html=await p.content();const css=fs.readFileSync('docs/assets/'+fs.readdirSync('docs/assets').find(x=>/^index-.*\.css$/.test(x)),'utf8');html=html.replace('</head>',`<style>${css}</style></head>`);fs.writeFileSync('.impeccable/review/rendered-photo.html',html);await b.close();

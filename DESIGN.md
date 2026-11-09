@@ -72,3 +72,8 @@ Station select and time range are native keyboard-accessible controls. shadcn Bu
 - Don't turn open content into repeated cards.
 - Don't introduce photographs without verified reuse rights.
 - Don't imply navigation or warning accuracy.
+
+## Photoreal extension (2026-11-09)
+Seven AI-generated coastal illustrations add atmosphere without changing the illustrative instrument model. Images are generic coastal character, not verified station photographs. The 1953 storm illustration is explicitly non-archival. Existing historical sources and credits remain.
+The hero uses a marine-black translucent scrim with white text, a 4px outlined pause control, and a locked-camera locally rendered sea-ripple film. Gemini Veo's composer remained disabled after image attachment; no video was generated there. Reduced motion renders only the still. Ambient film is separate from sub-400ms UI transitions.
+Small labels/captions have a 12px floor; compact moon/state labels are 11px on phones. Added intentional photo-overlay colors: white #ffffff and marine-black rgba(8,29,34,.76), with border #b9cec4. Keep lunar discs, chart, ticks and needle schematic so the interface remains clearly an educational model.

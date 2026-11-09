@@ -4,6 +4,8 @@ import { animate, createSpring } from "animejs";
 import { ArrowDown, ArrowUpRight, Waves, MoveUpRight } from "lucide-react";
 import { NumberTicker } from "./components/magicui/number-ticker";
 import "./App.css";
+import { CoastalHero, StationPortrait } from "./CoastalMedia";
+const mediaPath = `${import.meta.env.BASE_URL}media/`;
 import { Almanac } from "./Almanac";
 const stations = [
   {
@@ -74,19 +76,9 @@ function App() {
         <span className="edition">A North Sea field companion</span>
       </header>
       <main>
+        <CoastalHero />
         <section className="hero" id="explore">
-          <div className="hero-heading">
-            <h1 ref={title}>
-              Between land
-              <br />
-              and a changing sea.
-            </h1>
-            <p>
-              A small almanac for a coast
-              <br />
-              that never stands still.
-            </p>
-          </div>
+          <div className="hero-heading"><h2 ref={title} id="tide-clock">A day by the tide.</h2><p>Choose a coast. Follow its rhythm.<br/>Every reading is illustrative.</p></div>
           <div className="tide-stage">
             <div className="station-panel">
               <label htmlFor="station">Choose your stretch of coast</label>
@@ -106,6 +98,7 @@ function App() {
                 <br />
                 {stations[station].coords}
               </p>
+              <StationPortrait station={station} />
               <div className="reading">
                 <span className="state">
                   <MoveUpRight
@@ -162,25 +155,9 @@ function App() {
                 })}
                 <circle cx="300" cy="252" r="181" fill="#d5e6d9" />
                 <g clipPath="url(#dial-clip)">
-                  <motion.rect
-                    x="115"
-                    width="370"
-                    height="370"
-                    fill="#173f4a"
-                    animate={{ y: 395 - height * 50 }}
-                    transition={{
-                      type: "spring",
-                      duration: reduced ? 0 : 0.32,
-                      bounce: 0.1,
-                    }}
-                  />
-                  <path
-                    d="M110 295 Q205 265 300 295 T490 295 M110 315 Q205 285 300 315 T490 315 M110 335 Q205 305 300 335 T490 335"
-                    fill="none"
-                    stroke="#9db9b3"
-                    strokeWidth="1"
-                    opacity=".55"
-                  />
+                  <image href={`${mediaPath}tide-low-724.webp`} x="119" y="71" width="362" height="362" preserveAspectRatio="xMidYMid slice" />
+                  <motion.image href={`${mediaPath}tide-high-724.webp`} x="119" y="71" width="362" height="362" preserveAspectRatio="xMidYMid slice" animate={{opacity: Math.max(0, Math.min(1, (height - 1) / 3.2))}} transition={{type: "spring", duration: reduced ? 0 : 0.32, bounce: 0}} />
+                  <circle cx="300" cy="252" r="181" fill="#173f4a" opacity=".12" />
                 </g>
                 <text x="300" y="17" textAnchor="middle">
                   HIGH WATER
@@ -245,6 +222,7 @@ function App() {
                   {time(hour)}
                 </text>
               </svg>
+              <p className="dial-note">High / low water · AI illustrations, not observed conditions</p>
             </div>
             <div className="edge-note">
               THE PULL OF THE MOON. THE SHAPE OF THE SHORE.

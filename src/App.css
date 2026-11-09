@@ -99,7 +99,7 @@ h3 {
   text-decoration: underline;
 }
 .edition {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 .hero {
@@ -180,7 +180,7 @@ h3 {
   margin-left: 10px;
 }
 .reading p {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 .text-link {
@@ -202,7 +202,7 @@ h3 {
 }
 .dial text {
   font-family: Manrope, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1.3px;
   fill: var(--marine);
 }
@@ -214,7 +214,7 @@ h3 {
 .edge-note {
   writing-mode: vertical-rl;
   justify-self: end;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 1.6px;
   color: var(--muted);
 }
@@ -237,7 +237,7 @@ h3 {
 .time-control > div:first-child span {
   display: flex;
   gap: 10px;
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 8px;
   color: var(--muted);
 }
@@ -250,7 +250,7 @@ input[type="range"] {
 .time-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 12px;
   font-variant-numeric: tabular-nums;
   color: var(--muted);
   padding-top: 7px;
@@ -260,7 +260,7 @@ input[type="range"] {
   color: var(--marine);
 }
 .data-note {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   margin-top: 22px;
   line-height: 1.6;
@@ -294,7 +294,7 @@ footer > span {
   }
   .masthead nav {
     gap: 20px;
-    font-size: 11px;
+    font-size: 12px;
     width: 100%;
     justify-content: space-between;
   }
@@ -327,7 +327,7 @@ footer > span {
   }
   .station-panel > label {
     grid-column: span 2;
-    font-size: 11px;
+    font-size: 12px;
   }
   .station-panel select {
     grid-column: span 2;
@@ -335,7 +335,7 @@ footer > span {
     font-size: 21px;
   }
   .coordinates {
-    font-size: 10px;
+    font-size: 12px;
   }
   .reading {
     margin-top: 14px;
@@ -343,7 +343,7 @@ footer > span {
     grid-column: 2;
   }
   .state {
-    font-size: 9px;
+    font-size: 12px;
     gap: 4px;
   }
   .state svg {
@@ -353,10 +353,10 @@ footer > span {
     font-size: 48px;
   }
   .reading p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .text-link {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 15px;
     gap: 7px;
   }
@@ -367,7 +367,7 @@ footer > span {
     display: none;
   }
   .dial text {
-    font-size: 11px;
+    font-size: 12px;
   }
   .time-control {
     grid-template-columns: 1fr;
@@ -384,15 +384,15 @@ footer > span {
     font-size: 12px;
   }
   .time-control > div:first-child span {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
   }
   .data-note {
-    font-size: 9px;
+    font-size: 12px;
   }
   footer {
     padding: 28px 6%;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -430,7 +430,7 @@ h2 {
 .chart-caption {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 12px;
   padding-bottom: 24px;
 }
 .chart-caption > span:last-child {
@@ -449,7 +449,7 @@ h2 {
   gap: 20px;
 }
 .chart-bottom p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.8;
   color: var(--muted);
 }
@@ -458,7 +458,7 @@ h2 {
   border: 1px solid #173f4a55;
   border-radius: 4px;
   padding: 12px 16px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--marine);
   display: flex;
   gap: 16px;
@@ -506,7 +506,7 @@ td {
 }
 .small-note {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 20px;
   color: #c0d0c4;
 }
@@ -530,7 +530,7 @@ td {
 }
 .phase span {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
 }
 .phase.active {
   border-bottom: 3px solid var(--signal);
@@ -555,7 +555,7 @@ td {
   line-height: 1.9;
   margin-top: 10px;
   max-width: 65ch;
-  color: #d0dfd3;
+  color: #e1ebdf;
 }
 .memory-section {
   background: #d7e4dc;
@@ -595,7 +595,7 @@ td {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 11px;
+  font-size: 12px;
 }
 .safety-note {
   margin-top: 38px;
@@ -607,7 +607,7 @@ td {
   flex-shrink: 0;
 }
 .safety-note p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.8;
   max-width: 105ch;
 }
@@ -630,7 +630,7 @@ td {
   letter-spacing: 0;
 }
 .making p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.9;
   color: var(--muted);
   margin-bottom: 16px;
@@ -658,7 +658,7 @@ td {
   }
   .chart-caption {
     display: block;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.8;
   }
   .chart-caption > span {
@@ -673,7 +673,7 @@ td {
     gap: 15px;
   }
   .chart-bottom p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .moon-section,
   .making {
@@ -688,7 +688,7 @@ td {
     gap: 7px;
   }
   .phase span {
-    font-size: 9px;
+    font-size: 12px;
   }
   .phase svg {
     margin-bottom: 8px;
@@ -723,12 +723,30 @@ td {
     align-items: flex-start;
   }
   .safety-note p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .making {
     gap: 22px;
   }
   .making p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
+/* Photoreal field photography, with the original instrument styling retained. */
+.coastal-hero{position:relative;margin:0;height:620px;isolation:isolate;overflow:hidden;background:#173f4a;color:#fff}
+.coastal-hero>img,.hero-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}
+.hero-film{z-index:-2}
+.coastal-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,29,34,.76),rgba(8,29,34,.12)),linear-gradient(0deg,rgba(8,29,34,.5),transparent 30%)}
+.coastal-hero-copy{position:absolute;left:7%;top:15%;max-width:780px}
+.photo-eyebrow{font-size: 12px;letter-spacing:2px;color:#e3edda}
+.coastal-hero h1{font-family:"Barlow Condensed",sans-serif;font-size:clamp(60px,7vw,100px);font-weight:500;line-height:.98;letter-spacing:-.025em;margin:28px 0}
+.coastal-hero-copy p{font-size:15px;line-height:1.8;max-width:34ch}
+.coastal-hero-copy a{display:inline-flex;align-items:center;gap:40px;margin-top:30px;font-size:12px;padding-bottom:10px;border-bottom:1px solid #ffffff80;text-decoration:none}
+.coastal-hero>figcaption{position:absolute;bottom:22px;left:7%;font-size: 12px;max-width:65%;line-height:1.6}
+.film-toggle{position:absolute;right:7%;bottom:20px;background:#173f4a;color:#fff;border:1px solid #b9cec4;padding:10px 14px;font-size: 12px;border-radius:4px;cursor:pointer}
+.coastal-hero a:focus-visible,.film-toggle:focus-visible{outline-color:#cce77c}
+.hero{padding-top:48px}.hero-heading h2{font-size:48px}.tide-stage{margin-top:20px}.station-panel{padding-top:12px}
+.station-portrait{margin:18px 0 0;max-width:275px}.station-portrait img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}.station-portrait figcaption,.memory-photo figcaption,.dial-note{font-size: 12px;line-height:1.7;color:#49645f;margin-top:7px}.reading{margin-top:22px}.dial-note{text-align:center;margin:0 0 22px}.memory-photo{margin:25px 0 0}.memory-photo img{width:100%;height:auto;display:block}.memory-photo figcaption{max-width:45ch}
+@media(max-width:700px){.coastal-hero{height:570px}.coastal-hero-copy{left:6%;right:6%;top:12%}.coastal-hero h1{font-size:60px;margin-top:24px}.coastal-hero-copy p{font-size:13px;max-width:27ch}.coastal-hero>figcaption{left:6%;bottom:68px;max-width:83%;font-size: 12px}.film-toggle{right:auto;left:6%;bottom:20px}.hero-heading h2{font-size:40px}.station-portrait{grid-column:span 2;grid-row:5;max-width:none;margin-top:20px}.station-portrait img{max-height:160px}.station-portrait figcaption{font-size: 12px}.reading{margin-top:14px}.dial-note{font-size: 12px}.memory-photo{max-width:500px}}
+.chart-bottom button:hover{background:#dce7da;color:#173f4a}.hero,.section-pad{padding-left:7vw;padding-right:7vw}@media(max-width:700px){.hero,.section-pad{padding-left:6vw;padding-right:6vw}.state{font-size:11px}.phase span{font-size:11px}.time-control>div:first-child{gap:12px}.coastal-hero>figcaption{max-width:88%}}
+:root{--muted:#d7e4dc}.edition,.coordinates,.reading p,.edge-note,.time-control>div:first-child span,.time-labels,.data-note,.section-heading>p,.chart-caption>span:last-child,.chart-bottom p,.making p{color:#49645f}
